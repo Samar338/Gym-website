@@ -1,0 +1,487 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: sans-serif;
+}
+:root{
+    --white:#fff;
+    --gold: #ffd700;
+    --black:#000;
+}
+.border{
+    border: 1px solid red;
+}
+header.navbar{
+    background-image: url(image/gym2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    position: relative;
+    
+}
+header .logo{
+    margin-left: 25px;
+    margin-top: 20px;
+    color: var(--white);
+
+}
+header .logo h1::first-letter{
+    background-color: var(--gold);
+    padding: 0 2px ;
+    border-radius: 2px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+
+}
+nav ul li{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight:bold ;
+    margin-right: 5px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: var(--white);
+    border: none;
+    margin-bottom: 5px;
+    border-bottom:2px solid transparent;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+nav ul li:hover{
+    border-bottom:2px solid var(--gold);
+}
+@media (max-width:400px){
+     .logo{
+        visibility: hidden; 
+    }
+}
+.content-on-img{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    margin-left: 20px;
+    
+}
+.content-on-img h1{
+    color: var(--gold);
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+.content-on-img p{
+    color: var(--white);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+
+}
+
+.content-on-img .btn-img{
+
+    margin-block: 20px ;
+    background-color: var(--gold);
+    padding: 14px 30px;
+    font-size: 20px;
+    color: var(--black);
+    border: none;
+    cursor: pointer;
+}
+.butn{  
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.butn button{
+    transition: 500ms;
+}
+.butn button:hover{
+    background-color: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+}
+.butn a{
+    margin-top: 55px;    
+    text-decoration: none;
+    transition: 500ms;
+ 
+ 
+}
+.butn a i{
+    visibility: hidden;
+}
+.butn a:hover{
+    scale: 1.1;
+}
+.butn a:hover i{
+    visibility: visible;
+}
+.butn p{
+    color: var(--gold);
+
+}
+.the-experiencs{
+    width: 90%;
+    margin: 0 auto;
+}
+.title-experiencs{
+    text-align: center;
+    font-size: 60px;
+}
+.experiencs{
+    width: 100%;
+}
+.experiencs p{
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+    margin: 70px auto;
+    color: #504f4f;
+
+}
+.exper-photo{
+    width: 90%;
+    margin: 0 auto;
+}
+.exper-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.title-experiencs hr{
+    margin-top: 100px;
+    margin-inline: auto;
+    width: 200px;
+    color: var(--gold);
+    height: 5px;
+    border: none;
+    background-color: var(--gold);
+    border-radius: 20%;
+}
+.exper-content-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.exper-content-text h1{
+    font-size: 40px;
+    font-weight: bold;
+    /* background-color: #504f4f; */
+    margin-top: auto;
+    margin-inline: auto;
+    margin-left: 50px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.exper-content-text p{
+    color: #504f4f;
+    font-size: 30px;
+    width: 80%;
+    margin-left: 50px;
+}
+.exper-content-text small{
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--gold);
+}
+.exper-content img{
+    width: 50%;
+    height: 400px;
+}
+.our-sports-machines{
+    width: 80%;
+    margin-inline: auto;
+    margin: 100px auto;
+
+
+}
+.our-sports-machines hr{
+
+    margin-top: 100px;
+    margin: 0px 30%;
+    width: 250px;
+    color: var(--gold);
+    height: 7px;
+    border: none;
+    background-color: var(--gold);
+    border-radius: 20%;
+    
+}
+.our-sports-machines h1{
+    width: 100%;
+    margin-bottom: 80px;
+    font-size: 80px;
+    margin: 0 ;
+    margin-bottom: 80px;
+
+
+
+
+}
+.machin-photo{
+    position: relative;
+}
+.machin-photo img{
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+}
+.machin-photo{
+    /* display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-gap: 50px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    background-color: var(--gold);
+    padding: 20px;
+    /* margin: 0 auto; */
+   
+}
+.photo1{
+    position: relative;
+}
+.photo1 h3{
+
+    color: var(--gold);
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 25px;
+    transition: 0.8s;
+    
+}
+.text{
+    visibility: hidden;
+    /* transition: 500ms; */
+}
+.photo1 p{
+    color: var(--white);
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    transition: 0.5s;
+}
+.photo1 button{
+    
+    color: var(--black);
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    padding: 14px 16px;
+    font-weight: bold;
+    margin-left: 0;
+    border: none;
+    background-color: var(--gold);
+    transition: 0.1s;
+}
+.photo1:hover .text{
+    visibility: visible;
+
+    
+}
+
+/* =========================================instructor-=================================== */
+.instructor{
+    width: 80%;
+    margin: 0 auto;
+}
+.instructor hr{
+    margin-top: 100px;
+    margin: 0px 10%;
+    width: 200px;
+    color: var(--gold);
+    height: 7px;
+    border: none;
+    background-color: var(--gold);
+    border-radius: 20%;
+}
+.instructor h1{
+    width: 100%;
+  margin-bottom: 80px;
+  font-size: 80px;
+  margin: 0;
+    margin-bottom: 0px;
+  margin-bottom: 80px;
+
+}
+.instructor-container{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+   
+}
+.instructor-container .content{
+    flex-wrap: wrap;
+
+    position: relative;
+    background-color: #ffd700;;
+    width: 25%;
+    height: 100%;
+    border-radius: 6px ;
+    padding: 12px 12px;
+    transition: 0.2s;
+
+}
+.instructor-container .content:hover{
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    scale: 1.01;
+}
+.instructor-container .content img{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    height: 400px;
+
+}
+.instructor-container .content p{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    margin-inline: auto;
+    bottom: 10px;
+    text-align: center;
+    color:var(--black);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ==================================footer=============================== */
+
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #e6e3e34d;
+    padding-top: 20px;
+
+}
+.company-help-account{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-right: 100px;
+    margin-inline: 140px;
+    margin-block: 50px;
+}
+.company-help-account a{
+    text-decoration: none;
+    color: #504f4f;
+    border: none;
+}
+.company-help-account ul li{
+    list-style: none;
+    margin-top: 15px;
+}
+.company-help-account a:hover{
+    border-bottom: 2px solid var(--gold);
+}
+.container-footer h1{
+    font-size: 60px;
+    margin-top: 52px;
+
+
+}
+.container-footer h1::first-letter{
+    height: auto;
+    background-color: #ffd700;
+    padding: 6px;
+    border-radius: 6px;
+}
+.icon-input-text{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.conact-icon{
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin: 15px;
+}
+.conact-icon h4{
+    color: #504f4f;
+    margin-bottom:20px; 
+}
+.conact-icon .cont-icon{
+    display: flex;
+    justify-content: space-between;
+
+}
+.cont-icon i{
+    font-size: 30px;
+    color: var(--gold);
+}
+.input-text{
+
+    
+
+
+}
+.input-text h4{
+    color: #504f4f;
+    margin-bottom:20px;
+
+}
+.input-text .input{
+    background-color: var(--white);
+    /* padding:  10px; */
+
+}
+.input-text input{
+    padding: 6px 10px;
+    /* background-color: var(--gold); */
+    border: none;
+    outline: none;
+}
+.input-text i{
+ background-color: #ffd700;
+ padding: 6px 10px;
+ /* margin-left: 5px; */
+
+}
+.container-footer small{
+    display: block;
+    margin-bottom: 6px;
+    width: 80%;
+}
